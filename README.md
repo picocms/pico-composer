@@ -21,24 +21,16 @@ You can install Pico either using a pre-bundled release or with composer. If you
 
 ###### Step 1
 
-Open a shell and navigate to the desired install directory of Pico within the `httpdocs` directory (e.g. `/var/www/html`) of your server. You can now download the `picocms/pico-composer` project as follows:
+Open a shell and navigate to the desired install directory of Pico within the `httpdocs` directory (e.g. `/var/www/html`) of your server. Download [composer][] and run it with the `create-project` option:
 
 ```shell
-$ curl -sSL https://github.com/picocms/pico-composer/archive/master.tar.gz | tar xz --strip 1
+$ curl -sSL https://getcomposer.org/installer | php
+$ php composer.phar create-project picocms/pico-composer .
 ```
 
 ###### Step 2
 
-Download [composer][] and run it with the `install` option:
-
-```shell
-$ curl -sSL https://getcomposer.org/installer | php
-$ php composer.phar install
-```
-
-###### Step 3
-
-There's no third step! You have nothing to consider specially, simply navigate to your Pico install using your favorite web browser. Pico's default contents will explain how to use your brand new, stupidly simple, blazing fast, flat file CMS.
+There's no second step! You have nothing to consider specially, simply navigate to your Pico install using your favorite web browser. Pico's default contents will explain how to use your brand new, stupidly simple, blazing fast, flat file CMS.
 
 Upgrade
 -------
