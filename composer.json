@@ -23,6 +23,7 @@
         "source": "https://github.com/picocms/Pico"
     },
     "require": {
-        "picocms/pico": "^2.0"
+        "picocms/pico": "^2.0",
+        "picocms/composer-installer": "*"
     }
 }
