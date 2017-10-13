@@ -7,14 +7,12 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Gilbert Pellegrom",
-            "email": "gilbert@pellegrom.me",
-            "role": "Project Founder"
+            "name": "The Pico Community",
+            "homepage": "http://picocms.org/"
         },
         {
-            "name": "The Pico Community",
-            "homepage": "https://github.com/picocms/Pico/graphs/contributors",
-            "role": "Contributors"
+            "name": "Contributors",
+            "homepage": "https://github.com/picocms/composer-installer/graphs/contributors"
         }
     ],
     "support": {
@@ -24,6 +22,8 @@
     },
     "require": {
         "picocms/pico": "^2.0",
-        "picocms/composer-installer": "*"
+        "picocms/pico-theme": "^2.0",
+        "picocms/pico-deprecated": "^2.0",
+        "picocms/composer-installer": "^1.0"
     }
 }
