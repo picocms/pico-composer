@@ -26,9 +26,9 @@
         "source": "https://github.com/picocms/Pico"
     },
     "require": {
-        "picocms/pico": "^2.0",
-        "picocms/pico-theme": "^2.0",
-        "picocms/pico-deprecated": "^2.0",
+        "picocms/pico": "^2.1",
+        "picocms/pico-theme": "^2.1",
+        "picocms/pico-deprecated": "^2.1",
         "picocms/composer-installer": "^1.0"
     }
 }
