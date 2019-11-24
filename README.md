@@ -15,7 +15,7 @@ This is Pico's [Composer][] starter project. `picocms/pico-composer` is the fram
 Screenshot
 ----------
 
-![Pico Screenshot](https://picocms.github.io/screenshots/pico-20.png)
+![Pico Screenshot](https://picocms.github.io/screenshots/pico-21.png)
 
 Getting Help
 ------------
