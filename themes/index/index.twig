@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+	<link rel="stylesheet" href="{{ theme_url }}/styles/style.css">
+  </head>
+  <body>
+	<header>
+		<figure><img id="pagelogo" src="{{ assets_url }}/img/packmor-logo.png" alt="Packmor.org-Logo"></figure>
+	</header>
+	<nav>
+		<a id="mobilenav" href="#mobilenav" title="Navigation">Navigation</a>
+		<a id="mobilenav-close" href="#" title="Navigation">Navigation schlie&szlig;en</a>
+		<ul>
+			<li aria-current="page"><a href="#">Home</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="https://packmor.org/pagetest/html/impressum.html">Impressum</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<figure>
+				<img src="{{ assets_url }}/img/teneriffa.jpg" alt="Schiff im Hafen von Teneriffa">
+			</figure>
+		</section>
+	</main>
+	<footer>
+		<figure><img class="pagelogo" src="{{ assets_url }}/img/f_logo_RGB-Grey_58.png" alt="Facebook Logo"></figure>
+	</footer>
+  </body>
+</html>

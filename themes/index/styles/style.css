@@ -1,0 +1,408 @@
+/*-------------------------------
+### CSS RESET START           ###
+-------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------
+### CSS RESET END             ###
+-------------------------------*/
+
+/*-------------------------------
+### GENERAL SETTINGS START    ###
+-------------------------------*/
+/* latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(../fonts/work_sans_latin_ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(../fonts/work_sans_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+	/*Rahmen und Innenabstand werden in der Boxgroesse beruecksichtigt.*/
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 0;
+	font-family: Helvetica, Arial, Geneva, sans-serif;
+}
+
+*, ::before, ::after {
+	/*Einstellung fuer die Boxgroesse (s. o.) wird vererbt.*/
+	box-sizing: inherit;
+}
+
+body {
+	display: grid;
+	grid-template-columns: auto auto;
+	position: relative;
+	/*Seiteninhalt zentrieren*/
+	margin: 0 auto;
+	/*Minimale Breite festlegen, damit der Text lesbar bleibt.*/
+	min-width: 16em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+a[href^="tel"] {
+	/*Zeilenumbruch in Telefonnummern vermeiden*/
+	white-space: nowrap;
+}
+
+/*-------------------------------
+### GENERAL SETTINGS END      ###
+-------------------------------*/
+
+/*-------------------------------
+### HEADER START              ###
+-------------------------------*/
+
+header {
+	grid-column: 1 / span 2;
+	background-color: #fff;
+	padding: 1rem;
+}
+
+header #pagelogo {
+	height: 6rem;
+	width: auto;
+}
+
+/*-------------------------------
+### HEADER END                ###
+-------------------------------*/
+
+/*-------------------------------
+### NAVIGATION START          ###
+-------------------------------*/
+
+nav {
+	grid-column: 1 / span 2;
+	background-color: #fff;
+}
+
+nav ul {
+	width: 100%;
+	height: 100%;
+	border: 1px solid;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: block;
+	margin: 0;
+	border: 1px solid;
+	padding: 0;
+}
+
+nav a {
+	margin: 0;
+	padding: 0.5em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	background-color: #e7c157;
+	display:block;
+}
+
+	nav li[aria-current] a {
+		color: #777;
+	}
+
+nav ul a:focus,
+nav ul a:hover,
+nav ul a:active {
+	color: #fffbf0;
+	background-color: #dfac20;
+}
+
+nav #mobilenav,
+nav #mobilenav-close {
+	/*Skaliert die Groesse des gesamten Symbols*/
+	font-size: 2rem;
+	/*Positionierung des Symbols*/
+	position: absolute;
+	top: 2.8rem;
+	right: 2.8rem;
+	/*inline-block verhaelt sich wie ein Block-Element, wird aber nicht auf zwei Zeilen umgebrochen.*/
+	display: inline-block;
+	/*Die Hoehe entspricht dem vorgelagerten Element (0.2em padding + 0.6em Rand oben + 0.2em Rand unten).*/
+	height:1rem;
+	/*Breite des Links auf ein Minimum festlegen und mit overflow hidden verhindern, dass ueber die Breite hinausgehender Text nicht angezeigt wird. Dadurch ist der Linktext auf dem Display nicht sichtbar, wird aber von einem Screenreader vorgelesen*/
+	width: 1px;
+	overflow: hidden;
+	/*Die Breite fuer das gesamte Symbol festlegen.*/
+	padding-left: 1.2em;
+	padding-right: 0;
+	/*Hintergrundfarbe auf Transparent stellen*/
+	background-color: transparent;
+}
+
+nav #mobilenav::before,
+nav #mobilenav-close::before {
+	content: "";
+	/*Positionierung der Striche innerhalb des Symbols*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*Die Breite der Striche innerhalb des Symbols festlegen*/
+	width: 1.2em;
+	/*Striche mit Hilfe von Rahmen definieren. Oben: 0.2 em Linie + 0.2 em Leerraum + 0.2 em Linie, 0.2 em Leerraum mit Padding, 0.2 em Linie unten*/
+	padding-bottom: 0.2em;
+	border-top: 0.6em double black;
+	border-bottom: 0.2em solid black;
+}
+
+/* Navigation ausblenden, sofern der interne Seitenverweis auf #mobilenav NICHT aktiv ist. */
+nav #mobilenav ~ ul {
+	display: none;
+}
+
+/* Navigation einblenden, sofern der interne Seitenverweis auf #mobilenav aktiv ist. */
+nav #mobilenav:target ~ ul {
+	display: block;
+}
+
+/* Button zum schliessen des Menues ausblenden. */
+nav #mobilenav-close {
+	display: none;
+}
+
+/* Button zum einblenden des Menues ausblenden, sofern der interne Seitenverweis auf #mobilenav aktiv ist und damit das Menue eingeblendet ist. */
+nav #mobilenav:target {
+	display: none;
+}
+
+/* Button zum schliessen des Menues einblenden, sofern der interne Seitenverweis auf #mobilenav aktiv ist und damit das Menue eingeblendet ist. */
+nav #mobilenav:target ~ #mobilenav-close {
+	display: block;
+}
+
+/*-------------------------------
+### NAVIGATION END            ###
+-------------------------------*/
+
+/*-------------------------------
+### MAIN START                ###
+-------------------------------*/
+
+main {
+	grid-column: 1 / span 2;
+	margin: 0 auto;
+	width: 100%;
+	background-image: linear-gradient(90deg, white, black 10%, black 90%, white),
+	                  linear-gradient(90deg, white, black 10%, black 90%, white);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: 0 0, 0 100%;
+}
+
+main h1 {
+	font-size: 2rem;
+	margin: 1.34em 0;
+	line-height: 2.34em;
+}
+
+main h1:first-child {
+	margin-top: 0.5em;
+}
+
+main h2 {
+	font-size: 1.5rem;
+	margin: 1.245em 0;
+	line-height: 1.74em;
+}
+
+main h3 {
+	font-size: 1.17rem;
+	margin:1.1699em 0;
+	line-height: 1.41em;
+}
+
+main h4 {
+	font-size: 1rem;
+	margin: 1.33em 0;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+main h5 {
+	font-size: 0.83rem;
+	margin: 1.386em 0;
+	line-height: 0.92em;
+	font-weight: bold;
+}
+
+main h6 {
+	font-size: 0.67rem;
+	margin: 1.5611em 0;
+	line-height: 0.76em;
+	font-weight: bold;
+}
+
+main p {
+	font-size: 1rem;
+	margin: 1em 0;
+	line-height: 1.2em;
+}
+
+/* Bilder, die nicht in einen Artikel eingebunden sind (z. B. auf der Startseite), auf der ganzen Breite anzeigen. */
+main section > figure > img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+main article {
+	max-width: 50em;
+	margin: 0 auto 2em;
+	padding: 1rem;
+	background-image: linear-gradient(90deg, white, black 10%, black 90%, white),
+	                  linear-gradient(90deg, white, black 10%, black 90%, white);
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: 0 0, 0 100%;
+}
+
+main article:first-child {
+	margin-top: 2em;
+}
+
+/*-------------------------------
+### MAIN END                  ###
+-------------------------------*/
+
+/*-------------------------------
+### FOOTER START              ###
+-------------------------------*/
+
+footer {
+	grid-column: 1 / span 2;
+	padding: 1rem 0;
+}
+
+footer figure {
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer figure img.pagelogo {
+	height: 2rem;
+	width: auto;
+}
+
+/*-------------------------------
+### FOOTER END                ###
+-------------------------------*/
+
+/*===================================
+### DISPLAYGROESSE ANPASSEN START ###
+===================================*/
+
+@media (min-width: 30em) {
+	body{
+		width: 90%;
+	}
+	
+	/* Header macht Platz fuer die Navigation. */
+	header {
+		grid-column: 1 / span 1;
+	}
+	
+	/* Nav wird schmaler und passt so in die zweite Spalte. */
+	nav {
+		grid-column: 2 / span 1;
+	}
+	
+	/* Navigationsbutton fuer mobile Geraete ausblenden. */
+	nav #mobilenav,
+	nav #mobilenav-close,
+	nav #mobilenav:target,
+	nav #mobilenav:target ~ #mobilenav-close {
+		display: none;
+	}
+	
+	/* Navigation nebeneinander anordnen. */
+	nav #mobilenav ~ ul,
+	nav #mobilenav:target ~ ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+		border: none;
+	}
+	
+	nav li {
+		display: inline-block;
+		height: 100%;
+		border: none;
+		font-size: 1.5em;
+	}
+	
+	nav a {
+		display: inline-block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 1em;
+		background-color: transparent;
+	}
+}
+
+/*===================================
+### DISPLAYGROESSE ANPASSEN END   ###
+===================================*/
