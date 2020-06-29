@@ -1,0 +1,500 @@
+/**
+ * Main.css for Bits and Pieces theme for Pico
+ * Authored by Fredrik Danielsson, Lost&Keys (http://lostkeys.se)
+ * Licensed under MIT (https://github.com/lostkeys/Bits-and-Pieces-Theme-for-Pico/blob/master/LICENSE)
+ *
+ * Dev note: This stylesheet is using a mobile first approach
+ */
+
+
+
+/*
+ * Variables, resets and setup
+ */
+
+:root {
+  --background-color: rgb(255, 255, 255);
+  --text-color: #4d5757;
+  --border-color: #e1e7e8;
+  --code-bg-color: #fafafa;
+  --accent-color: #c1cacc;
+  --link-color: #2980B9;
+
+  --document-horizontal-margin: 80px;
+  --main-content-margin: 0 auto;
+  --main-content-max-width: 800px;
+  --nav-width: 180px;
+  --vertical-padding: 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(22, 22, 23);
+    --text-color: rgb(138, 138, 139);
+    --border-color: rgb(40, 40, 41);
+    --code-bg-color: rgb(33, 33, 34);
+    --accent-color: rgb(80, 80, 81);
+    --link-color: #2980B9;
+  }
+}
+
+
+
+/*
+ * Font-face
+ */
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../font/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/SourceSansPro-Regular.otf.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/SourceSansPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-It.eot'); /* IE9 Compat Modes */
+  src: url('../font/SourceSansPro-It.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/SourceSansPro-It.otf.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/SourceSansPro-It.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../font/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/SourceSansPro-Semibold.otf.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/SourceSansPro-Semibold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-SemiboldIt.eot');
+  /* IE9 Compat Modes */
+  src: url('../font/SourceSansPro-SemiboldIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/SourceSansPro-SemiboldIt.otf.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/SourceSansPro-SemiboldIt.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
+/*
+ * Mediaqueries
+ */
+
+@media (max-width: 1200px) {
+  :root {
+    --main-content-margin: 0 0 0 var(--nav-width);
+  }
+}
+
+
+
+/*
+ * Block styling
+ */
+
+html {
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+
+
+/*
+ * Structure
+ */
+
+.main-content {
+  margin: var(--main-content-margin);
+  max-width: var(--main-content-max-width);
+}
+
+.main-content .article {
+  margin-bottom: var(--document-horizontal-margin);
+  margin-left: var(--vertical-padding);
+  margin-right: var(--vertical-padding);
+  margin-top: var(--document-horizontal-margin);
+}
+
+
+
+/*
+ * Basic styling
+ */
+
+a,
+a:link,
+a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  text-decoration: underline;
+  outline: none !important;
+}
+
+hr {
+  border-color: #ecf0f1;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1.5rem;
+  margin-top: 6rem;
+}
+
+h2 {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+h2::before,
+h3::before
+{
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background);
+  color: var(--accent-color);
+  content: '#';
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left: -2rem;
+  padding-right: .5rem;
+  text-align: right;
+  width: 1.5rem;
+}
+
+.main-content h1:first-of-type {
+  margin-top: 0;
+}
+
+
+h2 + h3 {
+  margin-top: 1.5rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+table td,
+table th {
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 1px 0;
+  padding: .3rem 0;
+  text-align: left;
+}
+
+/* Avoid border-on-border together with bordered H2 */
+h2 + table tr:first-child th,
+h2 + table tr:first-child td {
+  border-top-width: 0;
+}
+
+code {
+  background-color: var(--code-bg-color);
+  border-radius: 1px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  display: inline-block;
+  font-size: .875rem;
+  padding: 0 3px;
+}
+
+pre code {
+  display: block;
+  padding: 5px 10px;
+}
+
+
+
+/*
+ * Copy to clipboard
+ */
+
+.copy-to-clipboard-btn {
+  appearance: none;
+  border: 0;
+  background: none;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+}
+
+.copy-to-clipboard-btn:hover {
+  color: var(--link-color);
+}
+
+.copy-to-clipboard-btn:active {
+  color: var(--text-color);
+}
+
+.copy-to-clipboard-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.code-block-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.code-block-container .copy-to-clipboard-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  opacity: .25;
+  transition: opacity .15s;
+}
+
+.code-block-container:hover .copy-to-clipboard-btn {
+  opacity: 1;
+}
+
+
+
+/*
+ * Main navigation
+ */
+
+.main-nav {
+  box-sizing: border-box;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-left: var(--vertical-padding);
+  position: fixed;
+  top: 0;
+  width: var(--nav-width);
+}
+
+.main-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  display: flex;
+  font-size: 0.9rem;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  text-decoration: none;
+}
+
+.main-nav a .shortcut {
+  align-self: center;
+  color: var(--accent-color);
+  display: inline-block;
+  font-size: .6875rem;
+  font-weight: normal;
+  margin-left: auto;
+  text-align: right;
+}
+
+.main-nav nav {
+  padding:  var(--document-horizontal-margin) 0;
+}
+
+.main-nav nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-nav nav li {
+  margin-left: 0px;
+}
+
+.main-nav nav > ul > li {
+  padding-left: 0px;
+}
+
+.main-nav nav li.active {
+
+}
+
+.main-nav nav li.active > a {
+  font-weight: bold;
+}
+
+/* Main nav Tree (not implemented...yet */
+
+.main-nav nav li.directory > a::before {
+  content: '▸ ';
+}
+
+.main-nav nav li.directory a.folder-open::before {
+  content: '▾ ';
+}
+
+.main-nav nav li.directory > ul {
+  display: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.main-nav nav li.directory.open > ul {
+  display: block;
+}
+
+/* same-page navigation (Not implemented...yet) */
+
+.page-nav:not(:empty) {
+  padding-top: 5px;
+}
+
+.page-nav a {
+  font-size: 0.8em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.page-nav a:before {
+  content: '# ';
+}
+
+
+
+/*
+ * Main navigation
+ */
+
+.page-toc {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: var(--vertical-padding);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: var(--nav-width);
+}
+
+@media (max-width: 1200px) {
+  .page-toc {
+    display: none;
+  }
+}
+
+.page-toc ul {
+  list-style: none;
+  margin: 0;
+  padding:  var(--document-horizontal-margin) 0;
+}
+
+.page-toc a {
+  color: var(--accent-color);
+  display: flex;
+  font-size: 0.9rem;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-toc a:hover {
+  text-decoration: none;
+}
+
+
+
+/* Toc markers are used as anchors since sticky headers
+ * interfere with scrollto when scrolling up.
+ */
+
+.page-toc-scroll-marker {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  position: relative;
+  top: 1px;
+  width: 1px;
+}
+
+
+
+/* Class to contain example code for example if
+ * used as a styleguide or pattern library
+ */
+
+.example {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.example + pre {
+  margin-top: 0;
+}
+
+.example + pre code {
+  border-top: 0;
+}
