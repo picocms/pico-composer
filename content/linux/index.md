@@ -1,5 +1,5 @@
 ---
-Title: Welcome
+Title: Linux
 Description: This description will go in the meta description tag
 Author: Joe Bloggs
 Date: 2001-04-25
@@ -28,3 +28,6 @@ Template: index
 %config.*% - Access any scalar config variable, e.g. %config.theme% is replaced with default
 <br/>
 <br/>
+
+
+## Menu inicial
