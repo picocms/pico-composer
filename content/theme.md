@@ -1,5 +1,5 @@
 ---
-title: Theme Styling Test
+title: Estilos
 hidden: true
 ---
 
