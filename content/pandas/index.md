@@ -1,5 +1,0 @@
----
-Title: Pandas
----
-
-#pandas

@@ -1,5 +1,4 @@
 ---
-title: Estilos
 hidden: true
 ---
 

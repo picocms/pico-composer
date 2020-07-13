@@ -1,3 +1,0 @@
----
-Title: Ingeniería de Software
----

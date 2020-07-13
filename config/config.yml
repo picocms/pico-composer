@@ -1,7 +1,7 @@
 ##
 # Basic
 #
-site_title: Pico                    # The title of your website
+site_title: jpb                    # The title of your website
 base_url: ~                         # Pico will try to guess its base URL, if this fails, override it here;
                                     #     Example: https://example.com/pico/
 rewrite_url: ~                      # A boolean (true or false) indicating whether URL rewriting is forced
@@ -30,8 +30,8 @@ twig_config:                        # Twig template engine config
 date_format: %D %T                  # Pico's default date format;
                                     #     See https://php.net/manual/en/function.strftime.php for more info
 pages_order_by_meta: author         # Sort pages by meta value "author" (set "pages_order_by" to "meta")
-pages_order_by: alpha               # Change how Pico sorts pages ("alpha" for alphabetical order, "date", or "meta")
-pages_order: asc                    # Sort pages in ascending ("asc") or descending ("desc") order
+pages_order_by: date               # Change how Pico sorts pages ("alpha" for alphabetical order, "date", or "meta")
+pages_order: desc                    # Sort pages in ascending ("asc") or descending ("desc") order
 content_dir: ~                      # The path to Pico's content directory
 content_ext: .md                    # The file extension of your Markdown files
 content_config:                     # Parsedown Markdown parser config
