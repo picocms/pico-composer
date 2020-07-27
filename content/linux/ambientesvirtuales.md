@@ -101,5 +101,11 @@ $ conda env config vars set my_var=value
 $ conda env config vars list
 ```
 
+### Uso de jupyter notebook con ambiente virtual espec[ifico
+```
+import sys
+sys.path.append('/home/jpb/anaconda3/envs/music2/lib/python3.7/site-packages')
+```
+
 
 ## Ambientes virtuales con libreria virtualenv
