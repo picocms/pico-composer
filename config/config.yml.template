@@ -1,7 +1,7 @@
 ##
 # Basic
 #
-site_title: Pico                    # The title of your website
+site_title: SEO Técnico en español                    # The title of your website
 base_url: ~                         # Pico will try to guess its base URL, if this fails, override it here;
                                     #     Example: https://example.com/pico/
 rewrite_url: ~                      # A boolean (true or false) indicating whether URL rewriting is forced
@@ -12,7 +12,7 @@ locale: ~                           # Your PHP installation might require you to
 ##
 # Theme
 #
-theme: default                      # The name of your custom theme
+theme: magazine                      # The name of your custom theme
 themes_url: ~                       # Pico will try to guess the URL to the themes dir of your installation;
                                     #     If this fails, override it here. Example: https://example.com/pico/themes/
 theme_config:                       # Additional theme-specific config
