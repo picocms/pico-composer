@@ -1,10 +1,10 @@
 ---
-Tagline: A Clean Blog Theme by Start Bootstrap
-Description: We're expert to create beautiful design & smart technology
+Tagline: Una web técnica sobre cosas técnicas del mundo de la optimización de motores de búsqueda
+Description: Una web técnica sobre cosas técnicas del mundo de la optimización de motores de búsqueda
 Social:
-  linkedin : https://tn.linkedin.com/in/MohamedSafouanBesrour
-  github : https://github.com/BesrourMS
-  instagram : https://www.instagram.com/besrourms/
-  bitcoin: https://tipybit.com/besrour
+  linkedin : 
+  github : 
+  instagram : 
+  bitcoin: 
 Img: https://unsplash.it/1900/994?image=1075
 ---
