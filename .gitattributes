@@ -1,0 +1,7 @@
+/assets/.gitignore  export-ignore
+/config/.gitignore  export-ignore
+/content/.gitignore export-ignore
+/plugins/.gitignore export-ignore
+/themes/.gitignore  export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
