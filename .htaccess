@@ -4,7 +4,7 @@
     #RewriteBase /
 
     # Deny access to internal dirs and files by passing the URL to Pico
-    RewriteRule ^(config|content|vendor|CHANGELOG\.md|composer\.(json|lock|phar))(/|$) index.php [L]
+    RewriteRule ^(config|content|vendor|CHANGELOG\.md|SECURITY.md|composer\.(json|lock|phar))(/|$) index.php [L]
     RewriteRule (^\.|/\.)(?!well-known(/|$)) index.php [L]
 
     # Enable URL rewriting
