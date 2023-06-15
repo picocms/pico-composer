@@ -1,0 +1,38 @@
+{
+    "name": "picocms/pico-theme",
+    "type": "pico-theme",
+    "description": "This is Pico's official default theme. Pico is a stupidly simple, blazing fast, flat file CMS.",
+    "keywords": [ "pico", "picocms", "picocms-theme", "pico-theme", "default-theme" ],
+    "homepage": "http://picocms.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Rudolf",
+            "email": "picocms.org@daniel-rudolf.de",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "The Pico Community",
+            "homepage": "http://picocms.org/"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/picocms/pico-theme/graphs/contributors"
+        }
+    ],
+    "support": {
+        "docs": "http://picocms.org/themes/default/",
+        "issues": "https://github.com/picocms/pico-theme/issues",
+        "source": "https://github.com/picocms/pico-theme"
+    },
+    "require": {
+        "picocms/pico": "self.version"
+    },
+    "extra": {
+        "installer-name": "default",
+        "branch-alias": {
+            "dev-master": "2.1.x-dev",
+            "dev-pico-3.0": "3.0.x-dev"
+        }
+    }
+}
