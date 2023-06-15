@@ -32,5 +32,10 @@
         "picocms/composer-installer": "^1.0"
     },
     "minimum-stability": "beta",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "picocms/composer-installer": true
+        }
+    }
 }

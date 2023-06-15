@@ -31,4 +31,4 @@ Please refer to the ["Contributing" section][MainRepoContributing] of our main r
 [MainRepoInstall]: https://github.com/picocms/Pico#install
 [MainRepoUpgrade]: https://github.com/picocms/Pico#upgrade
 [MainRepoGettingHelp]: https://github.com/picocms/Pico#getting-help
-[MainRepoContributing]: https://github.com/picocms/Pico#contributing 
+[MainRepoContributing]: https://github.com/picocms/Pico#contributing
