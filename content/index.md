@@ -1,4 +1,4 @@
-# ClearDashboard Installer - Version 1.0.6.8 (hot-fix)
+# ClearDashboard Installer - Version 1.0.6.8
 
 <button onclick="window.location.href='https://github.com/Clear-Bible/CLEAR_External_Releases/raw/main/Files/ClearDashboard_1.0.6.8.exe';">Download Installer</button>
 
