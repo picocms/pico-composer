@@ -31,6 +31,12 @@
 <iframe src="https://player.vimeo.com/video/821327849" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821327849">Aqua Prototype</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+<br/>
+<video controls width="640" height="480">
+    <source src="../assets/NewCollabUser.mp4" type="video/mp4">
+</video>
+<p><a href="../assets/NewCollabUser.mp4">New Collaboration User Creation</a></p>
+
 <hr />
 
 # Help Document
