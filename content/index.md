@@ -6,33 +6,45 @@
 
 # Gettings Started Videos
 
-<iframe src="https://player.vimeo.com/video/837799574" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<a id="BasicSetup">Basic Setup Video</a>
+<a id="WhyDashboard">Why Dashboard Video</a>
+<a id="IntroToPINS">Intro to PINS Video</a>
+<a id="InterlinearGlossing">Interlinear Glossing Video</a>
+<a id="Aligning">Aliging, Unaligning, and Dual Aligning Video</a>
+<a id="Settings">Settings and Controls Video</a>
+<a id="Timer">Timer Video</a>
+<a id="AquaPrototype">Aqua Prototype Video</a>
+<a id="NewCollabUser">Create New Collaboration User</a>
+
+<hr />
+
+<iframe href="#BasicSetup" src="https://player.vimeo.com/video/837799574" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/837799574">Basic Setup</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/821326766" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#WhyDashboard" src="https://player.vimeo.com/video/821326766" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821326766">Why ClearDashboard?</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/821327150" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#IntroToPINS" src="https://player.vimeo.com/video/821327150" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821327150">Intro to Pins</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/821327478" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#InterlinearGlossing" src="https://player.vimeo.com/video/821327478" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821327478">Interlinear Glossing</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/827705888" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#Aligning" src="https://player.vimeo.com/video/827705888" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/827705888">Aliging, Unaligning, and Dual Aligning</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
-<iframe src="https://player.vimeo.com/video/829115824" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#Settings" src="https://player.vimeo.com/video/829115824" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/829115824">Settings and Controls</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/821327722" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#Timer" src="https://player.vimeo.com/video/821327722" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821327722">Timer</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://player.vimeo.com/video/821327849" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="#AquaPrototype" src="https://player.vimeo.com/video/821327849" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/821327849">Aqua Prototype</a> from <a href="https://vimeo.com/clearbible">Clear Bible</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <br/>
-<video controls width="640" height="480">
+<video href="#NewCollabUser" controls width="640" height="480">
     <source src="../assets/NewCollabUser.mp4" type="video/mp4">
 </video>
 <p><a href="../assets/NewCollabUser.mp4">New Collaboration User Creation</a></p>
