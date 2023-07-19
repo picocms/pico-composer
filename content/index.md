@@ -1,7 +1,7 @@
 <style>
 .center {
   margin: 10px;
-  width: 70%;
+  width: 90%;
   border: 3px solid #73AD21;
   padding: 10px;
 }
