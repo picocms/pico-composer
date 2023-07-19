@@ -2,7 +2,7 @@
 .center {
   margin: 10px;
   width: 90%;
-  border: 3px solid #73AD21;
+  border: 3px solid #80a8c2;
   padding: 10px;
 }
 </style>
