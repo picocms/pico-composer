@@ -4,6 +4,7 @@
   width: 90%;
   border: 3px solid #80a8c2;
   padding: 10px;
+  background: #d9dbda;
 }
 </style>
 
