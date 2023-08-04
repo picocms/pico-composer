@@ -14,6 +14,11 @@
 
 <hr />
 
+# Clear Dashboard User Feedback Portal
+
+<a href="https://clearbible.atlassian.net/servicedesk/customer/portal/2">https://clearbible.atlassian.net/servicedesk/customer/portal/2</a>
+
+
 # Gettings Started Videos
 
 <a href="#BasicSetup">Basic Setup Video</a><br/>
