@@ -8,9 +8,9 @@
 }
 </style>
 
-# ClearDashboard Installer - Version 1.0.6.10
+# ClearDashboard Installer - Version 1.1.0.6
 
-<button onclick="window.location.href='https://github.com/Clear-Bible/CLEAR_External_Releases/raw/main/Files/ClearDashboard_1.0.6.10.exe';">Download Installer</button>
+<button onclick="window.location.href='https://github.com/Clear-Bible/CLEAR_External_Releases/raw/main/Files/ClearDashboard_1.1.0.6.exe';">Download Installer</button>
 
 <hr />
 
