@@ -21,6 +21,7 @@
 
 # Gettings Started Videos
 
+<a href="#ExecIntro">Executive Intro</a><br/>
 <a href="#BasicSetup">Basic Setup Video</a><br/>
 <a href="#WhyDashboard">Why Dashboard Video</a><br/>
 <a href="#IntroToPINS">Intro to PINS Video</a><br/>
@@ -32,6 +33,14 @@
 <a href="#NewCollabUser">Create New Collaboration User</a><br/>
 
 <hr />
+
+<div class="center">
+<video id="ExecIntro" controls width="640" height="480">
+    <source src="../assets/ExecIntro.mp4" type="video/mp4">
+</video>
+<p><a href="../assets/ExecIntro.mp4">Executive Intro</a></p>
+</div>
+
 
 <div class="center">
 <iframe id="BasicSetup" src="https://player.vimeo.com/video/837799574" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
