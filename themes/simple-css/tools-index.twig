@@ -1,0 +1,15 @@
+{% include 'partials/header.twig' %}
+
+<main>
+	<p class="notice">{{ meta.notice }}</p>
+
+	{% for page in pages("tools")|reverse if not page.hidden %}
+		<div class="blog-item">
+			<a class="post-link" href="{{ page.url }}">{{ page.meta.h1 }}</a>
+			<p class="meta">{{ page.description }}</p>
+		</div>
+	{% endfor %}
+
+</main>
+
+{% include 'partials/footer.twig' %}

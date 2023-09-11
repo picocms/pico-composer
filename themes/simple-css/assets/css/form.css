@@ -1,0 +1,6 @@
+/* Make all form fields 100% width */
+form input,
+form textarea,
+form select {
+  width: 100%;
+}

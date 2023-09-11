@@ -1,0 +1,21 @@
+{% include 'partials/header.twig' %}
+
+<main>
+    <p class="notice">{{ meta.notice }}</p>
+        
+    <article>
+        {{ content }}
+    </article>
+
+    <h2>Password Security FAQs</h2>
+    
+    {% for faq in meta.FAQs %}
+    <details>
+        <summary>{{ faq['Q'] }}</summary>
+        <p>{{ faq['A'] }}</p>
+    </details>
+    {% endfor %}
+
+</main>
+
+{% include 'partials/footer.twig' %}

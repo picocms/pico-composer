@@ -1,0 +1,13 @@
+.post-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.meta {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.blog-item {
+  margin-bottom: 4rem;
+}

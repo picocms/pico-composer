@@ -29,8 +29,14 @@
         "picocms/pico": "^2.1",
         "picocms/pico-theme": "^2.1",
         "picocms/pico-deprecated": "^2.1",
-        "picocms/composer-installer": "^1.0"
+        "picocms/composer-installer": "^1.0",
+        "phrozenbyte/pico-robots": "^1.0"
     },
     "minimum-stability": "beta",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "picocms/composer-installer": true
+        }
+    }
 }

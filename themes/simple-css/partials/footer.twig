@@ -1,0 +1,34 @@
+        <footer>
+            <nav>
+
+            {% set isFirstItem = true %}
+
+            {% for order in range(1, pages|length + 1) %}
+                {% for page in pages %}
+                    {% if page.meta.footer_order == order %}
+                        {% set linkText = page.meta.menu_title ?: page.title %}
+                        {% if not isFirstItem %}|{% endif %}
+                        <a href="{{ page.url }}" target="_blank">{{ linkText }}</a>
+                        {% set isFirstItem = false %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            </nav>
+            <p>© {{ 'now' | date('Y') }} Password Utils. All rights reserved.</p>
+
+            {% if meta.JS %}
+
+                <script async src="{{ site_url }}/assets/js/{{ meta.JS|raw }}.js"></script>
+            
+            {% endif %}
+
+            {% if meta.CSS %}
+
+                <link rel="stylesheet" href="{{ theme_url }}/assets/css/{{ meta.CSS|raw }}.css">
+            
+            {% endif %}
+
+        </footer>
+	</body>
+</html>

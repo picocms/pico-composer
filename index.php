@@ -23,7 +23,7 @@ $pico = new Pico(
     __DIR__,    // root dir
     'config/',  // config dir
     'plugins/', // plugins dir
-    'themes/'   // themes dir
+    'themes/'   // themes dir 
 );
 
 // override configuration?

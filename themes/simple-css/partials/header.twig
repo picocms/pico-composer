@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ config.locale }}">
+
+    <head>
+        <link rel="stylesheet" href="{{ theme_url }}/assets/css/simple.min.css">
+        <title>{{ meta.title }} | {{ site_title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="{{ meta.description }}"/>
+        <meta name="robots" content="{{ meta.robots }}" />
+        <link href="{{ current_page.url }}" rel="canonical">
+
+        {% if meta.page_type != "ErrorPage" %}
+
+            <script type='application/ld+json'>
+
+            {% if meta.page_type == "SoftwareApplication" %}
+
+                {
+                    "@context": "https://schema.org",
+                    "@type": "{{ meta.page_type }}",
+                    "name": "{{ meta.title }}",
+                    "description": "{{ meta.description }}",
+                    "applicationCategory": "http://schema.org/WebApplication",
+                    "operatingSystem": "Web browser compatible with JavaScript",
+                    "url": "{{ current_page.url }}",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "0",
+                        "priceCurrency": "USD"
+                    }
+                }
+
+            {% else %}
+
+                {
+                    "@context": "https://schema.org",
+                    "@type": "{{ meta.page_type }}",
+                    "name": "{{ meta.title }}",
+                    "description": "{{ meta.description }}",
+                    "url": "https://password-generator.test/"
+                }
+
+            {% endif %}
+
+            </script>
+
+        {% endif %}
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+
+            {% for order in range(1, pages|length + 1) %}
+                {% for page in pages %}
+                    {% if page.meta.navbar_order == order %}
+                        {% set linkText = page.meta.menu_title ?: page.title %}
+                        <a href="{{ page.url }}">{{ linkText }}</a>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            </nav>
+            <h1>{{ meta.h1 }}</h1>
+            <p>{{ meta.sub_text }}</p>
+        </header>
