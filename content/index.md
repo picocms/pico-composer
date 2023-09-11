@@ -49,4 +49,4 @@ Whether you're a casual internet user or a tech-savvy professional, we can help 
 
 Companies of all sizes can also benefit from using our tools to enhance their cybersecurity and protect sensitive business information.
 
-<p class="notice">Our <a href="/tools" target="_blank">secure tools</a> will assist you in generating strong passwords and evaluating the strength of your existing ones.</p>
+<p class="notice">Our <a href="/tools">secure tools</a> will assist you in generating strong passwords and evaluating the strength of your existing ones.</p>

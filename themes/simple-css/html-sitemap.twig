@@ -9,7 +9,7 @@
     {% for page in pages %}
         {% if page.meta.page_type != "SoftwareApplication" %}
 
-        <li><a href="{{ page.url }}" target="_blank">{{ page.meta.menu_title ? page.meta.menu_title : page.meta.h1  }}</a></li>
+        <li><a href="{{ page.url }}">{{ page.meta.menu_title ? page.meta.menu_title : page.meta.h1  }}</a></li>
         
         {% endif %}
     {% endfor %}
@@ -21,7 +21,7 @@
 
     {% for page in pages("tools") %}
 
-        <li><a href="{{ page.url }}" target="_blank">{{ page.meta.menu_title ? page.meta.menu_title : page.meta.h1  }}</a></li>
+        <li><a href="{{ page.url }}">{{ page.meta.menu_title ? page.meta.menu_title : page.meta.h1  }}</a></li>
     
     {% endfor %}
 

@@ -8,7 +8,7 @@
                     {% if page.meta.footer_order == order %}
                         {% set linkText = page.meta.menu_title ?: page.title %}
                         {% if not isFirstItem %}|{% endif %}
-                        <a href="{{ page.url }}" target="_blank">{{ linkText }}</a>
+                        <a href="{{ page.url }}">{{ linkText }}</a>
                         {% set isFirstItem = false %}
                     {% endif %}
                 {% endfor %}

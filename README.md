@@ -1,34 +1,18 @@
-Pico
-====
+Password Utils
+===
 
-[![License](https://picocms.github.io/badges/pico-license.svg)](https://github.com/picocms/pico-composer/blob/master/LICENSE)
-[![Version](https://picocms.github.io/badges/pico-version.svg)](https://github.com/picocms/pico-composer#install)
-[![Libera.Chat](https://picocms.github.io/badges/pico-chat.svg)](https://web.libera.chat/#picocms)
-[![Open Bounties on Bountysource](https://www.bountysource.com/badge/team?team_id=198139&style=bounties_received)](https://www.bountysource.com/teams/picocms)
+This is a free-to-use website containing a collection of password-related tools. It was developed using [PICO](https://picocms.org/) – a simple yet powerful and blazing-fast PHP CMS.
 
-Pico is a stupidly simple, blazing fast, flat file CMS.
+🖌️ A custom theme was developed based on the [Simple CSS](https://simplecss.org/) library.
 
-Visit us at http://picocms.org/ and see http://picocms.org/about/ for more info.
+Both security and technical SEO-related aspects were covered during the website's development: from implementing security headers to creating a XML sitemap and robots.txt.
 
-This is Pico's [Composer][] starter project. `picocms/pico-composer` is the frame for basically all Pico installations starting with Pico 2.0, but doesn't consist of any considerable code itself. It's main purpose is to simply depend on Pico. Please refer to the ["Install"][MainRepoInstall] and ["Upgrade"][MainRepoUpgrade] sections of our main repository for information about how to install, upgrade and use Pico.
+This branch provides a concise working code (.htaccess and custom configs) specifically optimized for [LiteSpeed servers](https://www.litespeedtech.com/).
 
-Screenshot
-----------
+You can [access Password Utils for free](https://passwordutils.com/), or install it locally if needed. Here are the steps to set it up locally:
 
-![Pico Screenshot](https://picocms.github.io/screenshots/pico-21.png)
+    $ curl -sSL https://getcomposer.org/installer | php
+    $ git clone https://github.com/jvpdls/password-utils/tree/litespeed pico
+    $ php composer.phar --working-dir=pico install
 
-Getting Help
-------------
-
-Please refer to the ["Getting Help" section][MainRepoGettingHelp] of our main repository.
-
-Contributing
-------------
-
-Please refer to the ["Contributing" section][MainRepoContributing] of our main repository.
-
-[Composer]: https://getcomposer.org/
-[MainRepoInstall]: https://github.com/picocms/Pico#install
-[MainRepoUpgrade]: https://github.com/picocms/Pico#upgrade
-[MainRepoGettingHelp]: https://github.com/picocms/Pico#getting-help
-[MainRepoContributing]: https://github.com/picocms/Pico#contributing
+This should help you get started with Password Utils in your development environment.
