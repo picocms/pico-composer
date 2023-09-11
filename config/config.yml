@@ -3,7 +3,7 @@
 #
 site_title: Password Utils
 base_url: https://passwordutils.com
-rewrite_url: ~ # A boolean (true or false) indicating whether URL rewriting is forced
+rewrite_url: true # A boolean (true or false) indicating whether URL rewriting is forced
 debug: ~ # Set this to true to enable Pico's debug mode
 timezone: ~ # Your PHP installation might require you to manually specify a timezone
 locale: en # Your PHP installation might require you to manually specify a locale to use
