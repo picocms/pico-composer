@@ -30,5 +30,10 @@
         "picocms/pico-theme": "^3.0",
         "picocms/pico-deprecated": "^3.0",
         "picocms/composer-installer": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "picocms/composer-installer": true
+        }
     }
 }
