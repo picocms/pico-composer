@@ -10,6 +10,10 @@
  * License-Filename: LICENSE
  */
 
+// disable E_DEPRECATED, E_USER_DEPRECATED, and E_STRICT error reporting
+error_reporting(error_reporting() & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+error_reporting(error_reporting() & ~E_STRICT);
+
 // load dependencies
 // pico-composer MUST be installed as root package
 if (is_file(__DIR__ . '/vendor/autoload.php')) {
