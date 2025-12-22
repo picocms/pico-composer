@@ -4,7 +4,6 @@ Pico
 [![License](https://picocms.github.io/badges/pico-license.svg)](https://github.com/picocms/pico-composer/blob/master/LICENSE)
 [![Version](https://picocms.github.io/badges/pico-version.svg)](https://github.com/picocms/pico-composer#install)
 [![Libera.Chat](https://picocms.github.io/badges/pico-chat.svg)](https://web.libera.chat/#picocms)
-[![Open Bounties on Bountysource](https://www.bountysource.com/badge/team?team_id=198139&style=bounties_received)](https://www.bountysource.com/teams/picocms)
 
 Pico is a stupidly simple, blazing fast, flat file CMS.
 
